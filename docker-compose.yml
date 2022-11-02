@@ -15,7 +15,7 @@ services:
         networks:
                 - school
    odoo:
-        image: odoo15:15.0
+        image: odoo:15.0
         restart: always
         ports:
                 - 2022:8069
