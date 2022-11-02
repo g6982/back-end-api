@@ -4,18 +4,18 @@ services:
         image: postgres:12
         restart: always
         environment:
-                - POSTGRES_USER=odoo
-                - POSTGRES_PASSWORD=odoo
+                - POSTGRES_USER=odoo15
+                - POSTGRES_PASSWORD=odoo15
                 - POSTGRES_DB=postgres
                 - PGDATA=/var/lib/postgresql/data/pgdata
         ports:
-                - 51515:5432
+                - 52525:5432
         volumes:
                 - db-data:/var/lib/postgresql/data/pgdata
         networks:
-                - alandick
+                - school
    odoo:
-        image: odoo:15.0
+        image: odoo15:15.0
         restart: always
         ports:
                 - 2022:8069
@@ -29,9 +29,9 @@ services:
                 - ./custom-addons:/mnt/custom-addons
                 - odoo-data:/var/lib/odoo
         networks:
-                - alandick
+                - school
 volumes:
         odoo-data:
         db-data:
 networks:
-        alandick:
+        school:
