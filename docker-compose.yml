@@ -26,7 +26,7 @@ services:
                 - db
         volumes:
                 - ./config:/etc/odoo
-                - ./custom-addons:/mnt/custom-addons
+                - ./odoo-custom-addons:/mnt/odoo-custom-addons
                 - odoo-data:/var/lib/odoo
         networks:
                 - school
