@@ -19,7 +19,7 @@
     'version': '14.0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', "helpdesk_mgmt","base_rest_auth_api_key","base_rest_datamodel"],
+    'depends': ['base', "helpdesk_mgmt","base_rest_auth_api_key","base_rest_datamodel","openapi"],
 
     # always loaded
     'data': [
