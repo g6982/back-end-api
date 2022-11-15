@@ -331,6 +331,8 @@ class SaasPlans(models.Model):
         """
         
         for obj in self:
+            _logger.error(self.db_template)
+            _logger.error('FETCHING THE DATABASE TEMPLATES!!!!!!!!!!!')
             if not obj.db_template:
                 raise UserError("Please select the DB template name first.")
             if re.match("^template_",obj.db_template):
