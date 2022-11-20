@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record id="mobile_access_user" model="res.users">
+            <field name="name">Mobile Access Admin</field>
+            <field name="login">access@gmail.com</field>
+            <field name="state">active</field>
+            <field name="is_mobile_access">True</field>
+        </record>
+    </data>
+</odoo>
